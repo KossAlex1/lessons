@@ -1,0 +1,96 @@
+@import url(reset.css);
+
+* {
+	color: black;
+}
+
+.item {
+	color: darkgreen;
+}
+
+/* p {
+	color: aqua;
+} */
+
+.main-list .item {
+	color: red;
+}
+
+#map {
+	color:  orange;
+}
+
+
+
+.title {
+	color: yellowgreen;
+}
+
+mark {
+	color: red;
+}
+
+[class*="nk"] {
+	color: yellow;
+}
+
+
+.main {
+	color: orangered;
+}
+
+.main__text.text {
+	color: darkred;
+}
+
+.text,
+.sub-text {
+	color: darkcyan;
+}
+
+/* вкладеність: */
+
+/* .text a {
+	color: brown;
+} */
+
+/* .text .link {
+	color: darkblue;
+} */
+
+.lang *{
+	color:brown;
+}
+
+/* 
+спеціальні звернення */
+
+.free > p {
+	color: purple;
+}
+
+.free ~ p {
+	color:red;
+}
+
+.free + p {
+	color: palevioletred;
+}
+
+/* пріоритет селекторів */
+
+[class*="nk"] {
+	color: yellow;
+}
+/* рівнозначні і червоний колір нижче буде*/
+.info-link {
+	color: red;
+}
+
+.info .info-link {
+	color: blue;
+}
+
+.info h4 {
+	color: blueviolet;
+}
