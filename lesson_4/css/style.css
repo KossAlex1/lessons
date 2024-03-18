@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap");
+
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+
+.header {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	/* font-style: italic; */
+	color: olive;
+	text-align: center;
+}
+
+
+.main {
+	font-family: "Vollkorn SC", serif;
+	font-weight: 400;
+	color: darkblue;
+}
+
+.main .main-title {
+	color: blue;
+	text-align: center;
+	font-size: 60px;
+	text-shadow: 5px 5px 5px yellow, -5px -10px 10px orange;
+	text-transform: uppercase;
+	line-height: 1.66666667;
+	/* 100px/60px */
+	letter-spacing: 5px;
+}
+
+.main .main-text-democ {
+	font-style: italic;
+	text-decoration: underline wavy yellow;
+}
+
+.main .main-text-member {
+	font-style: oblique;
+	text-decoration: line-through double green;
+
+}
+
+.map {
+	font-family: "Kyiv Region", serif;
+	font-size: 20px;
+	color: red;
+	text-align: right;
+}
+
+.tradition {
+	font-family: "Lutsk sity", serif;
+	color: aqua;
+	text-align: justify;
+	font-style: italic;
+}
+
+.lang {
+	font-family: "Vollkorn SC", serif;
+	font-weight: 700;
+	color: darkblue;
+
+}
+
+.defens {
+	font-family: "Vollkorn SC", serif;
+	font-weight: 900;
+	color: rgba(9, 75, 9, 0.7);
+
+}
+
+.info {
+	text-decoration: underline dashed;
+	text-decoration-color: blueviolet;
+	word-spacing: 10px;
+}
+
+/* БЛОК 2 - Вибір ліжка*/
+.choose,
+.interior,
+.sofa {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	line-height: 1.875;
+	/* 30/16 */
+}
+
+.choose .choose-title {
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.2;
+
+}
+
+.interior-title,
+.sofa-title {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+.interior-title {
+	text-align: center;
+}
