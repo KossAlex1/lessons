@@ -8,18 +8,15 @@
 
 @font-face {
 	font-family: 'Lutsk sity';
-	src: url('../fonts/Lutsk_region/Lutsk-sity.woff2') format('woff2'),;
+	src: url('../fonts/Lutsk_region/Lutsk-sity.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 
-/* Proxima */
-/* normal 400/ semibold-600/bold-700/900-black */
 @font-face {
 	font-family: 'Proxima Nova';
-	src: url('ProximaNova-Regular.woff2') format('woff2'),
-		url('ProximaNova-Regular.woff') format('woff');
+	src: url('ProximaNova-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
