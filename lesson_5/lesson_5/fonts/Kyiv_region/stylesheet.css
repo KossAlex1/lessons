@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Kyiv Region';
-    src: url('KyivRegion-Regular.woff2') format('woff2'),
-        url('KyivRegion-Regular.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
