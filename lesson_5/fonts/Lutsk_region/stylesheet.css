@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Lutsk-sity';
+    src: url('Lutsk-sity.woff2') format('woff2'),
+        url('Lutsk-sity.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
