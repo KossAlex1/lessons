@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+@import url(fonts.css);
+@import url(reset.css);
+
+/* Практика */
+.practice {
+	padding: 30px;
+}
+
+.block {
+	background-color: blue;
+	margin-bottom: 30px;
+
+	/* border: 10px double green; */
+
+	/* border-left: 15px dashed violet;
+	border-right: 10px dotted violet;
+	border-top: 10px solid gray ;
+	border-bottom: 20px double rgb(0, 213, 255); */
+
+	/* outline: 10px solid rgb(223, 173, 173);
+	outline-offset: 5px; */
+
+	/* border-radius: 20px 50px 30px 100px; */
+	padding: 20px;
+	border-radius: 20px;
+
+	/* box-shadow: 10px 10px rgba(80, 134, 205, 0.625),-10px -10px 40px 10px rgba(1, 27, 61, 0.625); */
+
+	box-shadow: inset 0 0 10px 5px rgb(0, 251, 255);
+}
+
+/* .circle{
+	width: 400px;
+	height: 400px;
+	background-color: aqua;
+	border-radius: 50%;
+	margin-bottom: 30px;
+} */
+
+.link-one {
+	text-transform: uppercase;
+	color: yellowgreen;
+	border-bottom: 5px dotted red;
+	/* margin: 10px; */
+}
+
+
+.link-second {
+	display: block;
+	max-width: 300px;
+	margin: 10px auto;
+	background-color: blue;
+	text-transform: uppercase;
+	padding: 20px;
+	text-shadow: 1px 1px 2px rgb(194, 13, 13);
+	border-radius: 10px;
+	box-shadow: inset 0 0 10px 2px;
+	text-align: center;
+	letter-spacing: 5px;
+
+	/* visibility: hidden; */
+	/* opacity: 0.6; */
+	/* display: none; */
+
+}
+
+
+.inline {
+	background-color: yellow;
+	outline: 5px dashed green;
+	outline-offset: 5px;
+	/* border: 2px dashed orangered; */
+	/* opacity: 0.5; */
+
+}
+
+.inline-block {
+
+	background-color: brown;
+	max-width: 600px;
+	box-shadow: 0 0 30px 1px rgb(255, 140, 0);
+
+	/* opacity: 0.9; */
+	/* border: 10px double green; */
+
+	/* border-radius: 50px; */
+
+}
+
+.bg-example {
+	height: 400px;
+	padding: 20px;
+	/* background-color: blueviolet; */
+	/* background: transparent; */
+	color: darkblue;
+	background-image: url("../img/jump_girl.jpg");
+	/* background-repeat: no-repeat;
+	background-position: center ; */
+	/* background-position: 20% 30%; */
+	/* background-size: 100%; */
+	/* background-size: contain; */
+
+	background:
+		url("../img/purse.jpg") right / 100px no-repeat, linear-gradient(90deg, rgba(32, 36, 0, 1) 35%, rgba(254, 255, 0, 1) 100%) center/ 100px no-repeat, blueviolet url("../img/jump_girl.jpg") left top / 300px no-repeat;
+
+
+
+	/* background-image: linear-gradient(90deg, rgba(117, 58, 180, 1) 0%, rgba(83, 95, 156, 1) 26%, rgba(113, 134, 142, 1) 46%, rgba(235, 233, 84, 1) 66%, rgba(205, 208, 99, 1) 82%, rgba(225, 150, 93, 1) 95%, rgba(252, 176, 69, 1) 100%);
+	border-radius: 50px; */
+
+}
+
+
+
+
+
+
+/* ДЗ парт1 (про ліжка)*/
+
+.choose,
+.interior,
+.sofa {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	line-height: 1.875;
+	/* 30px/16px */
+}
+
+.choose .choose-title {
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.2;
+
+}
+
+.interior-title,
+.sofa-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.4;
+}
+
+.interior {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.interior-title {
+	text-align: center;
+	margin: 10px 0px;
+}
+
+.interior-photo {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.interior-text {
+	margin-bottom: 20px;
+}
+
+
+
+
+.sofa-list {
+	margin-left: 48px;
+	margin-bottom: 78px;
+}
+
+.sofa-item {
+	margin-bottom: 20px;
+	background: url("../img/icon_sofa.png") left 4% / 26px no-repeat;
+	padding-left: 48px;
+
+
+}
+
+/* дз парт2 ( сірий бекграунд ) */
+
+.top-coral {
+	padding: 100px 0px;
+	background: url("../img/top_main_coral_bg.jpg") center /cover no-repeat;
+	margin: 0 auto;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+
+}
+
+.top-coral-container {
+	max-width: 1225px;
+	margin: 0 auto;
+}
+
+
+
+.top-coral-left {
+	display: inline-block;
+	max-width: 685px;
+	text-align: left;
+	margin-right: 98px;
+
+}
+
+.top-coral-title {
+	font-size: 74px;
+	font-weight: 300;
+	letter-spacing: 5px;
+	margin-bottom: 52px;
+	line-height: 0.74;
+	/* 55px/74 */
+}
+
+.top-coral-descr {
+	font-size: 30px;
+	line-height: 1.83;
+	/* 55px/30 */
+	margin-bottom: 66px;
+
+}
+
+.top-girl {
+	max-width: 340px;
+	/* як варіант треба помістити імдж в блок з якимись падінгами або маджінами і зробити box-shadow: inset: ; / але ще навчивсь */
+	box-shadow: 30px 25px 0px -7px rgba(163, 163, 163, 0.671);
+	border-radius: 50% 0% 50% 0% / 50% 0% 50% 0%;
+
+
+}
+
+.top-coral-shop-now {
+	padding: 29px 26px 29px 70px;
+	color: #fff;
+	font-size: 29px;
+	background: #000 url("../img/icon_top.png") 10% 47% / 30px no-repeat;
+
+}
+
+.divider {
+	height: 100px;
+	background: linear-gradient(90deg, rgba(188, 212, 8, 1) 11%, rgba(8, 0, 255, 1) 100%);
+}
+
+
+
+
+
+
+/* дз парт3 ( фіолетовий бекграунд і імедж дитина з книгами) */
+
+.edu-play {
+	background: url("../img/edu_play_violet_bg.jpg") center /cover no-repeat;
+	margin: 0 auto;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 700;
+
+}
+
+.edu-play-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+
+
+.edu-play-left {
+	display: inline-block;
+	max-width: 600px;
+	padding: 121px 0px;
+	margin-right: 133px;
+	/* vertical-align: middle; */
+
+}
+
+.edu-play-title {
+	color: #fff;
+	font-size: 40px;
+	margin-bottom: 24px;
+	line-height: 1.2;
+	/* 48/40 */
+
+}
+
+.edu-play-descr {
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.6;
+	/* 32/20 */
+	font-weight: 500;
+	margin-bottom: 24px;
+
+}
+
+.edu-play-button {
+	padding: 12px 20px;
+	border-radius: 8px;
+	color: #0d1216;
+	line-height: 1.6;
+	/* 25/16 */
+	background: #fff url("../img/icon_top.png") 10% 47% / 30px no-repeat;
+
+}
+
+.kid-on-book {
+	max-width: 515px;
+	vertical-align: top;
+	max-height: 493px;
+
+}
