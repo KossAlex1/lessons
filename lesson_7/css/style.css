@@ -169,14 +169,14 @@ even- через один парні */
 /* :has псевдоклас присутності
 присутність в коді */
 
-.example-text:has(p) {
+/* .example-text:has(p) {
 	background-color: rgb(173, 17, 17);
 }
 
 .example-text:has(span) {
 	background-color: rgba(188, 157, 157, 0.684);
 
-}
+} */
 
 /* practice */
 
