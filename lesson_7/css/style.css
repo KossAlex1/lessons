@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+
+@import url(fonts.css);
+@import url(reset.css);
+
+/* Практика */
+
+/* Псевдокласи */
+.link-example {
+	/* color: darkgreen; */
+
+	font-family: "Quicksand", sans-serif;
+	font-weight: 700;
+	line-height: 1.56;
+	/* 25/16 */
+	padding: 12px;
+	background-color: #8b3dff;
+	color: #fff;
+	border-radius: 8px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+.link-example span {
+	display: inline-block;
+	background: url("../img/favourite_icon.svg") 0 0 no-repeat;
+	padding-left: 34px;
+}
+
+
+.link-example:hover {
+	color: blue;
+	background-color: #a875ff;
+
+}
+
+.link-example span {
+	background-position: 5px 0;
+}
+
+/* .example-text {
+	background-color: chartreuse;
+	visibility: hidden;
+	padding: 15px;
+} */
+
+/* .example-text:hover {
+	background-color: red;
+} */
+
+/* .visible:hover .example-text {
+	visibility: visible;
+} */
+
+.link-example:active {
+	background-color: #7921ed;
+	color: yellow;
+}
+
+/* .link-example:visited {
+	background-color:gray;
+} */
+
+/* .link-example:focus {
+	outline: 2px dotted  blue; 
+} */
+
+.link-example:focus-visible {
+	outline: 2px solid blue;
+}
+
+/********* target -випливання тексту з ссилки*/
+/* .show-a {
+	color: rgb(8, 89, 46);
+	font-size: 30px;
+}
+.show-a:hover {
+	text-decoration: underline;
+}
+.example-text {
+	display: none;
+}
+
+.example-text:target {
+	display: block;
+} */
+
+/* ************* псевдокласи положення в коді********* */
+/********* :first-child *****/
+
+/* .example-text p:first-child {
+ 	background-color: #1a6797;
+ } */
+
+/* .example-text *:first-child {
+	background-color: #1a6797;
+} */
+
+
+/********* :first-of-type*****/
+
+/* .example-text span:first-of-type {
+	background-color: rgb(9, 96, 9);
+}
+.example-text p:first-of-type {
+	background-color: green;
+}
+.example-text p:last-child{
+	background-color: yellow;
+	text-decoration: underline 1px double green ;
+	text-transform: uppercase;
+} */
+
+
+/* odd-через один непарні
+even- через один парні */
+/* або цифра */
+
+/* .example-text p:nth-child(even) {
+	background-color: #08323d;
+}
+.example-text p:nth-child(odd) {
+	background-color: #11809c;
+}
+
+.example-text p:nth-child(4) {
+	background-color: #247e1a;
+} */
+
+
+/* алгоритм- кожен+ починаючи з ---- кожен 3 починаючи з 1 */
+
+/* .example-text p:nth-child(3n + 1) {
+	background-color: #11809c;
+} 
+*/
+/* або кожен 3-й */
+
+/* .example-text p:nth-child(3n) {
+	background-color: #11809c;
+} */
+
+
+
+/* ************селетор виключення :not******** */
+
+.example-text {
+	background-color: rgb(138, 202, 61);
+	padding: 20px;
+}
+
+/* .example-text p {
+	margin-bottom: 20px;
+}
+
+.example-text p:last-child {
+	margin-bottom: 0px;
+}   */
+
+/* або */
+
+.example-text p:not(:last-of-type) {
+	margin-bottom: 15px;
+}
+
+/* :has псевдоклас присутності
+присутність в коді */
+
+.example-text:has(p) {
+	background-color: rgb(173, 17, 17);
+}
+
+.example-text:has(span) {
+	background-color: rgba(188, 157, 157, 0.684);
+
+}
+
+/* practice */
+
+.article>* {
+	margin-bottom: 15px;
+}
+
+.title {
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.content {
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.button {
+	background-color: yellow;
+	padding: 12px;
+	border-radius: 10px;
+	color: black;
+}
+
+.button:hover {
+	background-color: rgba(208, 208, 3, 0.712);
+}
+
+.article>*:last-child {
+	margin-bottom: 0px;
+}
+
+/* псевдоелементи */
+
+
+
+.divider {
+	height: 200px;
+	background: linear-gradient(90deg, rgba(188, 212, 8, 1) 11%, rgba(8, 0, 255, 1) 100%);
+	margin: 30px 0px;
+}
+
+.block::before {
+	content: "(";
+}
+
+.block::after {
+	content: ")";
+}
+
+.list {
+	padding: 20px;
+}
+
+.list-item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.list-item::before {
+	content: '';
+	vertical-align: middle;
+	background: url("../img/honey.jpg") 0 0 / 100% no-repeat;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+
+}
+
+.list-item:hover::before {
+	opacity: 0.8;
+}
+
+.example-sub-title,
+.about-me-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Exo", sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 1.16;
+	/* 70/60 */
+	margin-bottom: 20px;
+
+}
+
+.example-sub-title::after {
+	margin: 0 auto;
+	width: 60%;
+	display: block;
+	height: 2px;
+	content: "";
+	background: linear-gradient(90deg, rgba(247, 255, 37, 1) 13%, rgba(95, 255, 70, 1) 52%, rgba(0, 194, 255, 1) 100%);
+}
+
+
+
+
+
+
+
+/* ДЗ парт1 (про ліжка)*/
+
+.choose,
+.interior,
+.sofa {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	line-height: 1.875;
+	/* 30px/16px */
+}
+
+.choose .choose-title {
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.2;
+
+}
+
+.interior-title,
+.sofa-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.4;
+}
+
+.interior {
+	margin-bottom: 40px;
+}
+
+.interior-title {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+
+
+.interior-photo {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.interior-text {
+	margin-bottom: 20px;
+}
+
+
+
+.sofa-title {
+	margin-bottom: 40px;
+}
+
+.sofa-list {
+	margin-left: 48px;
+	margin-bottom: 78px;
+}
+
+.sofa-item {
+	background: url(../img/icon_sofa.png) left 4% / 26px no-repeat;
+	padding-left: 50px;
+}
+
+.sofa-item:not(:last-child) {
+	margin-bottom: 20px;
+
+}
+
+/* .sofa-item p::before {
+	display: inline-block;
+	content: "";
+	background: url("../img/icon_sofa.png") 0 0 / 100% no-repeat;
+	height: 27px;
+	width: 27px;
+	margin-right: 47px;
+	vertical-align: middle;
+
+} */
+
+
+
+/* дз парт2 ( about_me ) */
+.about-me {
+	background-color: rgb(10, 10, 10);
+	color: #fff;
+	padding: 205px 0px 230px 0px;
+	font-family: "Exo", sans-serif;
+}
+
+.about-me-container {
+	max-width: 992px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+/* прив'язав до прикладу .example-sub-title */
+
+.about-me-title::after {
+	content: "";
+	display: block;
+	background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(18, 255, 0, 1) 51%, rgba(68, 0, 255, 1) 100%);
+	height: 1px;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.about-me p {
+	font-size: 30px;
+	line-height: 1.33;
+	/* 40/30 */
+	font-weight: 400;
+	text-align: center;
+}
+
+.links {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	font-family: "Orbitron", sans-serif;
+	font-weight: 500;
+	line-height: 1.25;
+	/* 25px/20 */
+
+
+
+
+}
+
+.link-about:hover {
+	color: rgb(0, 255, 17);
+	;
+}
+
+.link-about:not(:first-child) {
+	margin-left: 55px;
+
+}
+
+.link-about::after {
+	display: inline-block;
+	content: "";
+	background: linear-gradient(101deg, rgba(255, 0, 0, 1) 0%, rgba(18, 255, 0, 1) 50%, rgba(68, 0, 255, 1) 100%);
+	height: 10px;
+	width: 10px;
+	margin-left: 55px;
+	text-align: right;
+	border-radius: 50%;
+}
+
+
+/* дз парт3 (info-block ) */
+
+.info-block {
+	color: #fff;
+	padding: 50px 0px;
+	background: linear-gradient(101deg, rgba(255, 0, 0, 1) 0%, rgba(18, 255, 0, 1) 51%, rgba(68, 0, 255, 1) 100%);
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Exo", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 50px;
+
+}
+
+.info-block a:not(:last-child) {
+	margin-right: 80px;
+}
+
+.info-block a:hover {
+	text-decoration: underline;
+
+}
+
+.info-block a:active {
+	color: #281414;
+}
+
+.info-phone::before {
+	height: 20px;
+	width: 20px;
+	content: "";
+	background: url("../img/icon_phone.png") 0 0 / 100% no-repeat;
+	margin-right: 20px;
+	vertical-align: middle;
+
+}
+
+
+.info-position::before {
+	height: 20px;
+	width: 20px;
+	content: "";
+	background: url("../img/icon_location.png") 0 0 / 100% no-repeat;
+	margin-right: 20px;
+	vertical-align: middle;
+
+}
+
+.info-mail::before {
+	content: "";
+	height: 20px;
+	width: 20px;
+	background: url("../img/icon_email.png") 0 2px / 100% no-repeat;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+/****************** дз парт 4 гра ************/
+/* якщо чесно , просидів з цьою грою 6+ годин -купу варіантів перепробував,щоб з блока де ховер вийти на наступний блок , але зробив цей варіант-експіріенсу не хватає */
+.game-title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-shadow: 5px 5px rgb(208, 0, 255);
+	text-align: center;
+}
+
+.game-container {
+	max-width: 1000px;
+	min-height: 700px;
+	margin: 0 auto;
+	border: 2px solid green;
+}
+
+.line-one {
+	width: 50px;
+	height: 50px;
+
+	background-color: #720593;
+}
+
+.line-two {
+	width: 50px;
+	height: 50px;
+	background-color: #720593;
+}
+
+.line-two:hover {
+	width: 100%;
+}
+
+
+.line-three {
+	height: 400px;
+	width: 50px;
+	background-color: #720593;
+	margin-left: 950px;
+	opacity: 0;
+}
+
+.line-three:hover,
+.line-four:hover,
+.line-five:hover,
+.line-six:hover,
+.line-seven:hover {
+	opacity: 1;
+}
+
+.line-four {
+	width: 500px;
+	height: 50px;
+	background-color: #720593;
+	margin-left: 500px;
+	opacity: 0;
+}
+
+.line-five {
+	width: 50px;
+	height: 100px;
+	margin-left: 500px;
+	background-color: #720593;
+	opacity: 0;
+}
+
+.line-six {
+	display: inline-block;
+	height: 50px;
+	width: 150px;
+	background-color: #720593;
+	margin-left: 450px;
+	opacity: 0;
+}
+
+.line-seven {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url("../img/exit_icon.jpg") 0 0 / 100% no-repeat;
+	opacity: 0;
+}
+
+.line-seven:hover {
+	border: 2px solid greenyellow;
+}
