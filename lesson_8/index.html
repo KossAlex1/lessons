@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<!-- lang uk треба,якщо увесь контент укр.мовою -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>lesson 8</title>
+	</head>
+	<body>
+		<!-- Відпрацювання властивостей: -->
+		<header>
+			<h1>Домашне завдання 8</h1>
+		</header>
+		<main>
+
+			<!-- дз1 done -->
+			<!-- 
+дз2 завантажити всі зобр, переконвертувати в webp і зверстати сторінку з іконками і з контентними зобр.-ми -->
+			<div class="content">
+				<div class="content-container">
+				<p class="margin">
+					<picture>	
+						<source srcset="img/big_hand_money_webp_x2.webp 2x ">
+						<img src="img/big_hand_money_webp.webp" alt="content" class="big-hand-money">
+					</picture>
+					<span>- контент, растрове, png ~ webp.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-1.svg" alt="content" class="icon" ><span>- іконка, векторне, svg.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-2.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-3.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-4.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-5.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-6.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-7.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-8.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-9.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-10.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+				<p class="margin">
+					<img src="img/icons/icon-11.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+					<p class="margin">
+					<img src="img/icons/icon-12.svg" alt="content" class="icon">
+					<span>іконка, векторне, svg.</span>
+				</p>
+
+				</div>
+
+			</div>
+			<!-- дз частина 3
+				щось частину показує  розміри зображень , а інші ні (в консолі розробника) -->
+			<div class="container">
+				<img
+					srcset="img/krovato_main_webp_2x.webp 2x, img/krovato_main_webp_4x.webp 3x"
+					src="img/krovato_main_webp.webp" class="living-room" alt="living room">
+			</div>
+			<div class="container">
+				<img srcset="img/krovato_sale_2x.webp 2x, img/krovato_sale_4x.webp 3x"
+					src="img/krovato_sale.webp" class="krovato-sale" alt="sofa for discount">
+
+				<!-- для Safari -->
+				<picture>
+					<source srcset="img/krovato_sale_2x.webp 2x, img/krovato_sale_4x.webp 3x">
+					<img src="img/krovato_sale.webp" alt="sofa for discount">
+				</picture>
+			</div>
+
+		</main>
+
+		<footer>
+			<h2> Зробив Домашку.Якщо щось не так -зрозуміти і пробачити!</h2>
+		</footer>
+
+	</body>
+</html>
