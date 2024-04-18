@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<!-- lang uk треба,якщо увесь контент укр.мовою -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>lesson 10</title>
+	</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+
+				<div class="catalog">
+					<a href="#" class="catalog__button">
+						<img src="img/catalog.svg" alt="close-icon" class="catalog__image">
+						<p class="catalog__text">Каталог</p>
+					</a>
+				</div>
+<!-- 
+				НЕ придумав ,щоб видно було все меню або скролилось -overflow clip заважає. Але і міняв на скрол- нічого -->
+				<div class="menu-catalog">
+					<ul class="menu-catalog__list">
+						<li class="menu-catalog__item">
+							<a href="#" class="menu-catalog__link">
+								<img class="menu-catalog__image" src="img/beds.svg" alt="beds">
+								<span class="menu-catalog__text">Ліжка</span>
+								<img class="menu-catalog__arrow" src="img/arrow.svg" alt="arrow">
+							</a>
+
+							<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu-catalog__item">
+							<a href="#" class="menu-catalog__link">
+								<img class="menu-catalog__image" src="img/matrass.svg" alt="matrass">
+								<span class="menu-catalog__text">Матраци</span>
+								<img class="menu-catalog__arrow" src="img/arrow.svg" alt="arrow">
+							</a>
+
+							<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a 
+										href="#" class="sub-menu__link">Односпальні матраци
+									</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Двоспальні матраци
+									</a>
+									</li>
+									<li class="sub-menu__item">
+										<a 
+										href="#" class="sub-menu__link">Пружинний блок Bonnel
+										</a>
+									</li>
+									<li class="sub-menu__item">
+										<a 
+										href="#" class="sub-menu__link">Пружинний блок Pocket Spring
+										</a>
+									</li>
+									<li class="sub-menu__item">
+										<a 
+										href="#" class="sub-menu__link">Безпружинні матраци
+										</a>
+									</li>
+
+									<li class="sub-menu__item">
+										<a 
+										href="#" class="sub-menu__link">Матраци з ефектом Зима-Літо
+										</a>
+									</li>
+									<li class="sub-menu__item">
+										<a 
+										href="#" class="sub-menu__link">Футони
+
+										</a>
+									</li>
+									<li class="sub-menu__item">
+										<a 
+										href="#" class="sub-menu__link">Дитячі матраци
+
+										</a>
+									</li>
+
+										<li class="sub-menu__item">
+										<a 
+										href="#" class="sub-menu__link">Матраци Економ
+
+										</a>
+									</li>
+
+
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu-catalog__item">
+							<a href="#" class="menu-catalog__link">
+								<img class="menu-catalog__image" src="img/soft_sofa.svg"
+									alt="soft_sofa">
+								<span class="menu-catalog__text">М’які меблі</span>
+								<img class="menu-catalog__arrow" src="img/arrow.svg" alt="arrow">
+							</a>
+							<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu-catalog__item">
+							<a href="#" class="menu-catalog__link">
+								<img class="menu-catalog__image" src="img/wardrobe.svg" alt="wardrobe">
+								<span class="menu-catalog__text">Шафи</span>
+								<img class="menu-catalog__arrow" src="img/arrow.svg" alt="arrow">
+							</a>
+							<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu-catalog__item">
+							<a href="#" class="menu-catalog__link">
+								<img class="menu-catalog__image" src="img/commode.svg" alt="commode">
+								<span class="menu-catalog__text">Комоди</span>
+								<img class="menu-catalog__arrow" src="img/arrow.svg" alt="arrow">
+							</a>
+							<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu-catalog__item">
+							<a href="#" class="menu-catalog__link">
+								<img class="menu-catalog__image" src="img/tumba.svg" alt="tumba">
+								<span class="menu-catalog__text">Тумби</span>
+								<img class="menu-catalog__arrow" src="img/arrow.svg" alt="arrow">
+							</a>
+								<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu-catalog__item">
+							<a href="#" class="menu-catalog__link">
+								<img class="menu-catalog__image" src="img/table.svg" alt="table">
+								<span class="menu-catalog__text">Столи</span>
+								<img class="menu-catalog__arrow" src="img/arrow.svg" alt="arrow">
+							</a>
+								<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu-catalog__item">
+							<a href="#" class="menu-catalog__link">
+								<img class="menu-catalog__image" src="img/chairs.svg" alt="chairs">
+								<span class="menu-catalog__text">Стільці</span>
+								<img class="menu-catalog__arrow" src="img/arrow.svg" alt="arrow">
+							</a>
+								<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu-catalog__item">
+							<a href="#" class="menu-catalog__link">
+								<img class="menu-catalog__image" src="img/walls.svg"alt="walls from wood">
+								<span class="menu-catalog__text">Меблеві стіни</span>
+								<img class="menu-catalog__arrow" src="img/arrow.svg" alt="arrow">
+							</a>
+								<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="menu-catalog__item">
+							<a href="#" class="menu-catalog__link">
+								<img class="menu-catalog__image" src="img/kitchen.svg" alt="kitchen">
+								<span class="menu-catalog__text">Кухні</span>
+								<img class="menu-catalog__arrow" src="img/arrow.svg" alt="arrow">
+							</a>
+							<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">ПідПункт</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+		</header>
+
+			<main class="page">
+
+				<!-- * Декор списку за допомогою псевдоелементів та позиціонування */ -->
+				<ul class="list">
+
+					<li class="list__item">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae voluptas
+						odit nesciunt quam tenetur recusandae exercitationem! Quod quam nulla,
+						odio sit quis in enim illum perferendis doloribus aut error consequuntur?
+					</li>
+					<li class="list__item">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae voluptas
+						odit nesciunt quam tenetur recusandae exercitationem! Quod quam nulla,
+						odio sit quis in enim illum perferendis doloribus aut error consequuntur?
+					</li>
+					<li class="list__item">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae voluptas
+						odit nesciunt quam tenetur recusandae exercitationem! Quod quam nulla,
+						odio sit quis in enim illum perferendis doloribus aut error consequuntur?
+					</li>
+					<li class="list__item">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae voluptas
+						odit nesciunt quam tenetur recusandae exercitationem! Quod quam nulla,
+						odio sit quis in enim illum perferendis doloribus aut error consequuntur?
+					</li>
+
+				</ul>
+				<!--/* декор сайту */ -->
+				<img class="decor" src="img/practice/frame.svg" alt="decor">
+
+				<!-- декор зображення 1	 -->
+
+				<div class="image">
+					<img class="image__item" src="img/practice/krovato_main_webp.webp"
+						alt="krovato">
+				</div>
+
+				<!-- декор зображення 2	 -->
+
+				<div class="some-picture some-picture--margine">
+					<img class="some-picture__image" src="img/practice/image.jpg"
+						alt="girl in white">
+				</div>
+
+				<div class="product-card product-card--margin">
+					<div class="product-card__labels">
+						<div class="product-card__label">
+							hot
+						</div>
+						<div class="product-card__label product-card__label--black">
+							sale
+						</div>
+					</div>
+					<a href="#" class="product-card__link">
+						<img src="img/practice/image-product.jpg" alt="girl in green"
+							class="product-card__image">
+					</a>
+					<h3 class="product-card__title">
+						<a href="#" class="product-card__link-title">Basic Dress Green</a>
+					</h3>
+					<a href="#" class="product-card_category">Dress</a>
+					<a href="#" class="product-card_price">$236.00</a>
+				</div>
+
+				<div class="product-card product-card--margin">
+					<div class="product-card__labels">
+						<div class="product-card__label">
+							hot
+						</div>
+					</div>
+					<a href="#" class="product-card__link">
+						<img src="img/practice/image-product.jpg" alt="girl in green"
+							class="product-card__image">
+					</a>
+					<h3 class="product-card__title">
+						<a href="#" class="product-card__link-title">Basic Dress Green</a>
+					</h3>
+					<a href="#" class="product-card_category">Dress</a>
+					<a href="#" class="product-card_price">$236.00</a>
+				</div>
+
+				<div class="popular">
+					<ul class="popular__list">
+						<li class="popular__item">
+							<h3><a href class="popular__kind">Ліжка</a></h3>
+							<h4><a href class="popular__number">54</a></h4>
+							<a href="#" class="popular__img-link"><img src="img/beds.webp" alt="beds"
+									class="popular__img"></a>
+							<a href="#" class="popular__arrow-link"><img src="img/arrow_popular.svg"
+									alt="arrow" class="popular__arrow"></a>
+						</li>
+					</ul>
+				</div>
+
+			</main>
+
+			<footer class="footer">
+				<div class="menu-footer">
+					<ul class="menu-footer__list">
+						<li class="menu-footer__item">пункт футера</li>
+						<li class="menu-footer__item">пункт футера</li>
+						<li class="menu-footer__item">пункт футера</li>
+						<li class="menu-footer__item">пункт футера</li>
+					</ul>
+				</div>
+			</footer>
+
+	</div>
+	</body>
+
+</html>
