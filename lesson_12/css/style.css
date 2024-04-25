@@ -220,8 +220,11 @@ body {
 
 @keyframes move {
 	0% {
+		/* з такими значеннями не хоче працювати (з трансформ і значення) */
+		/* transform: scale(0); */
+		/* transform: translate(137%, -14%); */
 		translate: 137% -14%;
-		scale: 0 0
+		scale: 0 0;
 	}
 	20% {
 		translate: 105% -5%;
@@ -230,7 +233,7 @@ body {
 	40% {translate: 115% 0;
 
 	}
-		80% {
+	80% {
 		translate: 0 6%;
 	}
 
