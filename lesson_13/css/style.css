@@ -568,14 +568,14 @@ body {
 
 @keyframes footer-move {
 	0% {
-		translate: -100% 0;
+	transform: translate(137%, -14%);
 
 
 	}
 
 
 	100% {
-		translate: 500%;
+		transform: translate(500%, 0);
 
 	}
 }
