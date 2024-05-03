@@ -544,17 +544,19 @@ min-width: 170px;
 	justify-content: space-between;
 	border-radius: 8px;
 	background:  #F8F8F8;
+	position: relative;
 }
 
 .location__text {
 	position: relative;
+	margin-left: 60px;
 	
 }
 
 .location__text::before {
 	position: absolute;
 	left: -60px;
-	top: -5px;
+	top: 12px;
 	content:'';
 	background:  url("../img/icons/location.svg") 0 0 / cover no-repeat;
 	width: 40px;
@@ -578,12 +580,35 @@ min-width: 170px;
 	
 }
 
-.location__button {}
+.location__button {
+	padding: 13px 20px ;
+	border-radius: 8px;
+	background-color: #FFBC57;	
+}
+
+.location__button:hover {
+	opacity: 0.7;
+	transition: all 0.2s;
+	
+}
 
 .location__link {
+	display: flex;
+	vertical-align: middle;
+	align-items: center;
+	gap: 10px;
 	color: #FFF;
 	font-size: 19px;
 	font-weight: 600;
 	line-height: 1.26;
 		
+
+}
+
+.location__link::before {
+	content: '';
+	width: 24px;
+	height: 24px;
+	background:  url("../img/icons/map_icon.svg") 0 0 / cover no-repeat;
+
 }
