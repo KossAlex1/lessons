@@ -590,13 +590,8 @@ body {
 
 }
 
-.location__button {
-	padding: 13px 20px;
-	border-radius: 8px;
-	background-color: #FFBC57;
-}
 
-.location__button:hover {
+.location__link:hover {
 	opacity: 0.7;
 	transition: all 0.2s;
 
@@ -611,7 +606,9 @@ body {
 	font-size: 19px;
 	font-weight: 600;
 	line-height: 1.26;
-
+	padding: 13px 20px;
+	border-radius: 8px;
+	background-color: #FFBC57;
 
 }
 
