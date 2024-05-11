@@ -483,11 +483,16 @@ body {
 	align-items: center;
 	border-radius: 8px;
 	justify-content: space-between;
+	transition: all 0.4s;
 }
 
-.header-proposition__item:hover {
-	outline: 2px solid orange;
+@media (any-hover: hover) {
+	.header-proposition__item:hover .header-proposition__text  {
+		color: rgb(255, 175, 3);
+	}
 }
+
+
 
 .header-proposition__icon {
 	height: 24px;
@@ -499,6 +504,7 @@ body {
 	font-size: 19px;
 	font-weight: 600;
 	line-height: 1.26;
+		transition: all 0.4s;
 }
 
 /* .kind-menu {} */
@@ -514,12 +520,15 @@ body {
 	font-weight: 600;
 	line-height: 1.26;
 	border-radius: 8px;
+	transition: all 0.4s;
 
 }
-
-.kind-menu__item:hover {
-	outline: 2px solid orange;
+@media (any-hover: hover) {
+	.kind-menu__item:hover  {
+		color: rgb(255, 175, 3);
+	}
 }
+
 
 @media (max-width: 1270px) {
 	.third-header__container {
