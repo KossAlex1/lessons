@@ -22,10 +22,10 @@ body {
 
 
 [class*="__container"] {
-		max-width: 1330px;
-		padding-left: 15px;
-		padding-right: 15px;
-		margin: 0 auto;
+	max-width: 1330px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
 }
 
 
@@ -33,12 +33,13 @@ body {
 	position: sticky;
 	top: 0;
 }
+
 /* *********Перша лінія********** */
 .top-header {
-background-color: #f8f8f8;
+	background-color: #f8f8f8;
 }
 
-.top-header__container{
+.top-header__container {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 15px;
@@ -48,20 +49,16 @@ background-color: #f8f8f8;
 .contacts {
 	display: flex;
 	gap: 30px;
-	
+
 }
 
 .contacts__list {
 	display: flex;
 	gap: 30px;
-	
+
 }
 
-.contacts__logo 
-
-
-
-.contacts__item {
+.contacts__logo .contacts__item {
 	display: flex;
 	color: #535353;
 	font-size: 16px;
@@ -72,7 +69,7 @@ background-color: #f8f8f8;
 }
 
 .contacts__link {
-		transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 /* .contacts__link:hover {
@@ -86,8 +83,8 @@ background-color: #f8f8f8;
 .help-and-consult__list {
 	display: flex;
 	align-items: center;
- flex-wrap: nowrap;
- gap: 20px;
+	flex-wrap: nowrap;
+	gap: 20px;
 }
 
 @media (any-hover: hover) {
@@ -118,33 +115,36 @@ background-color: #f8f8f8;
 }
 
 @media (max-width: 967px) {
-	.contacts__list  {
+	.contacts__list {
 		display: none;
 	}
-		.bar-btn {
-			display: block;
-		}
+
+	.bar-btn {
+		display: block;
+	}
 
 	.main-search__img-logo {
 		display: none;
 	}
 }
 
-.bar-btn__image {}
+/* .bar-btn__image {} */
+/* 
+.contacts__list {} */
 
-.contacts__list {}
-
-.contacts__logo{
+.contacts__logo {
 	display: none;
 }
+
 @media (max-width: 966.9px) {
 	.contacts__logo {
 		display: inline-block;
 	}
 
-	
-	
+
+
 }
+
 /* .call-btn {
 
 } */
@@ -156,7 +156,7 @@ background-color: #f8f8f8;
 
 
 /* .help-and-consult__link {} */
-.lang{
+.lang {
 	display: flex;
 	gap: 0;
 	vertical-align: middle;
@@ -194,7 +194,7 @@ background-color: #f8f8f8;
 .lang__arrow:hover {
 	background-color: #53535328;
 	border-radius: 3px;
-	
+
 }
 
 /* ******************************************* */
@@ -214,7 +214,7 @@ background-color: #f8f8f8;
 	gap: 30px;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	vertical-align: middle;	
+	vertical-align: middle;
 }
 
 /* .main-search__logo {} */
@@ -222,17 +222,17 @@ background-color: #f8f8f8;
 .main-search__img-logo {
 	width: 250px;
 	height: 50px;
-	
+
 }
 
-.main-search__button{
+.main-search__button {
 	display: inline-flex;
 	padding: 11px 20px;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
 	border-radius: 8px;
-	background:  #FFBC57;
+	background: #FFBC57;
 	color: #FFF;
 	font-size: 19px;
 	font-style: normal;
@@ -245,7 +245,7 @@ background-color: #f8f8f8;
 	flex-grow: 0;
 }
 
-.main-search__button::before{
+.main-search__button::before {
 	content: '';
 	width: 24px;
 	height: 24px;
@@ -253,9 +253,9 @@ background-color: #f8f8f8;
 	transition: all 0.3s linear;
 }
 
-.main-search__button:hover{
+.main-search__button:hover {
 	background: #faca82;
-	
+
 }
 
 .main-search__button:hover::before {
@@ -271,7 +271,7 @@ background-color: #f8f8f8;
 	display: flex;
 	gap: 5px;
 	flex-basis: 421px;
-	max-height: 50px ;		
+	max-height: 50px;
 	border: 1px solid #B1B1B1;
 	border-radius: 8px;
 	align-items: center;
@@ -297,7 +297,7 @@ background-color: #f8f8f8;
 	line-height: 1.87;
 }
 
-.search-box__button {}
+/* .search-box__button {} */
 
 .search-box__button-img {
 	width: 24px;
@@ -373,8 +373,9 @@ background-color: #f8f8f8;
 .phone__arrow {
 	width: 24px;
 	height: 24px;
-	transition: all 0.5s ;
+	transition: all 0.5s;
 }
+
 .phone__arrow:hover {
 	transform: scale(1.5);
 }
@@ -384,12 +385,13 @@ background-color: #f8f8f8;
 	gap: 20px;
 
 }
+
 .btn-find {
 	border-radius: 50%;
 	transition: all 0.2s linear;
 	width: 50px;
 	height: 50px;
-		
+
 }
 
 .btn-find__image {
@@ -398,14 +400,14 @@ background-color: #f8f8f8;
 	height: 50px;
 
 
-	
+
 }
 
 
 
 .link-favorites {
 	border-radius: 50%;
-	
+
 	width: 50px;
 	height: 50px;
 	transition: all 0.2s linear;
@@ -429,18 +431,20 @@ background-color: #f8f8f8;
 }
 
 @media (max-width: 1080px) {
-	.phone{
+	.phone {
 		flex-basis: 50px;
 	}
 
 	.phone__arrow {
 		display: none;
 
-		}
-		.phone__info{
-			display: none;}
+	}
 
-		
+	.phone__info {
+		display: none;
+	}
+
+
 
 }
 
@@ -454,8 +458,9 @@ background-color: #f8f8f8;
 /* **********ТРЕТЯ ЛІНІЯ ХЕДЕРА************ */
 .third-header {
 	background-color: #fff;
-	
+
 }
+
 .third-header__container {
 	display: flex;
 	justify-content: space-between;
@@ -516,14 +521,15 @@ background-color: #f8f8f8;
 }
 
 @media (max-width: 1270px) {
-.third-header__container {
+	.third-header__container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		row-gap: 20px;
-		
+
 	}
 }
+
 @media (max-width: 740px) {
 	.kind-menu {
 		display: none;
@@ -538,6 +544,7 @@ background-color: #f8f8f8;
 	.main-search {
 		justify-content: space-between;
 	}
+
 	.phone {
 		display: none;
 	}
@@ -546,7 +553,8 @@ background-color: #f8f8f8;
 		width: 50px;
 		height: 50px;
 		display: inline-block;
-		}
+	}
+
 	.help-and-consult__item {
 		display: none;
 	}
@@ -559,9 +567,9 @@ background-color: #f8f8f8;
 		justify-content: center;
 	}
 
-.third-header__container {
-	display: none;
-}
+	.third-header__container {
+		display: none;
+	}
 
 	.call-btn__image {
 		width: 50px;
@@ -601,44 +609,36 @@ height: 50px;
 
 @media (max-width: 420px) {
 
-		.contacts__logo {
-				display: flex;
-				width: 215px;
-				height: 36px;
-				flex-shrink: 0;
-			}
-		
-			.top-header__container {
-				justify-content: space-between;
-				gap: 5px;
-			}
-		
-			.contacts {
-				gap: 5px;
-			}
-		
-			.call-btn__image {
-				flex-shrink: 0;
-				width: 50px;
-				height: 50px;
-			}
-		
-			.main-search {
-				justify-content: space-between;
-				gap: 10px;
-			}
+	.contacts__logo {
+		display: flex;
+		width: 215px;
+		height: 36px;
+		flex-shrink: 0;
+	}
 
-			.favourites {
-				gap: 5px	;
-			}
+	.top-header__container {
+		justify-content: space-between;
+		gap: 5px;
+	}
+
+	.contacts {
+		gap: 5px;
+	}
+
+	.call-btn__image {
+		flex-shrink: 0;
+		width: 50px;
+		height: 50px;
+	}
+
+	.main-search {
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	.favourites {
+		gap: 5px;
+	}
 
 
 }
-
-
-
-
-
-
-
-
