@@ -384,19 +384,28 @@ background-color: #f8f8f8;
 	gap: 20px;
 
 }
+.btn-find {
+	border-radius: 50%;
+	transition: all 0.2s linear;
+	width: 50px;
+	height: 50px;
+		
+}
 
-.btn-find
 .btn-find__image {
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	transition: all 0.2s linear;
+
+
+	
 }
 
 
 
 .link-favorites {
 	border-radius: 50%;
+	
 	width: 50px;
 	height: 50px;
 	transition: all 0.2s linear;
@@ -415,7 +424,7 @@ background-color: #f8f8f8;
 .link-basket:hover,
 .link-favorites:hover,
 .btn-find:hover {
-	transform: scale(1.07);
+	transform: scale(1.05);
 	background-color: #53535334;
 }
 
