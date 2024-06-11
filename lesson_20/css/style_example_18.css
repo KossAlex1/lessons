@@ -1,0 +1,323 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Danfo:regular&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: "ProximaNova", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/* ------------------------- */
+[class*=__container] {
+  max-width: 1320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* ------------------------ */
+.page {
+  /* padding: 20px; */
+}
+
+/* ------------------------ */
+/*
+body
+	color: red
+	font-size: 20px;
+.block
+	width: 200px
+	border: 1px solid red
+*/
+/*
+body {
+	color: red;
+	font-size: 20px;
+}
+.block {
+	width: 200px;
+	border: 1px solid red;
+}
+*/
+/* я потраплю в CSS  */
+/*
+Назва змінної:
+1) Англійська мова
+2) стиль lowerCamelCase
+3) Адекватно відображати що містить змінна
+*/
+/*
+$mainColor: #fff;
+
+body {
+	color: $mainColor;
+}
+
+.block {
+	color: $mainColor;
+}
+*/
+.text span {
+  color: green;
+}
+.text.page__text {
+  color: green;
+  font-size: 40px;
+}
+.page .text {
+  color: orange;
+}
+
+.block__item {
+  color: green;
+}
+.block__item--red {
+  color: red;
+}
+
+.text {
+  color: green;
+}
+.text::before {
+  background-color: red;
+  content: "";
+}
+.text:hover {
+  color: red;
+}
+.text:hover::before {
+  background-color: greened;
+  content: "";
+}
+.text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 867px) {
+  .text {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.page .text {
+  color: red;
+}
+
+.page .text {
+  color: red;
+}
+
+.button, .page__button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: green;
+}
+
+.page__button {
+  padding: 20px;
+}
+
+.block, .page__button {
+  padding: 5px 20px;
+  font-size: 20px;
+  background-color: green;
+}
+
+.page__button {
+  background-color: #fff;
+}
+
+.block {
+  background-color: #77608d;
+}
+
+/*
+@function percent($num1, $num2) {
+	$rez: math.div($num1, $num2) * 100%;
+	@return $rez;
+}
+*/
+/*
+.list {
+	color: #fff;
+}
+.list__item {
+	font-size: 20px;
+	visibility: hidden;
+	transform: translate(-100%, 0);
+	opacity: 0;
+	animation: show-items 1s ease forwards;
+}
+
+.list__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.list__item:nth-child(1) {
+	animation-delay: 0s;
+}
+.list__item:nth-child(2) {
+	animation-delay: 0.2s;
+}
+.list__item:nth-child(3) {
+	animation-delay: 0.4s;
+}
+.list__item:nth-child(4) {
+	animation-delay: 0.6s;
+}
+.list__item:nth-child(5) {
+	animation-delay: 0.8s;
+}
+
+*/
+.list {
+  color: #fff;
+  width: 100px;
+}
+.list__item {
+  font-size: 20px;
+  visibility: hidden;
+  -webkit-transform: translate(-100%, 0);
+      -ms-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  opacity: 0;
+  -webkit-animation: show-items 1s ease forwards;
+          animation: show-items 1s ease forwards;
+}
+.list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.list__item:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.list__item:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.list__item:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.list__item:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.list__item:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.list__item:nth-child(6) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes show-items {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0px, 0%);
+            transform: translate(0px, 0%);
+  }
+}
+
+@keyframes show-items {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0px, 0%);
+            transform: translate(0px, 0%);
+  }
+}
