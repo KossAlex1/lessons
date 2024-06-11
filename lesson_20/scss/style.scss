@@ -1,0 +1,300 @@
+@use "sass:math";
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_mixins.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,600&display=swap");
+
+
+$mainColor: #000;
+$main-bg: #fff;
+
+// Мінімальна ширина сторінки@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1320;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1320;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: $mainColor;
+	background-color: $main-bg;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: toRem(1350);
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+	margin: 0 auto;
+
+}
+
+// // *************Page************
+// *******Collection*********
+.collections {
+	background-color: #f3f4f4;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+
+	.branch-left {
+		position: absolute;
+		display: flex;
+		flex-shrink: 0;
+		flex-shrink: 1;
+		flex-grow: 0;
+		flex-basis:toRem(132);
+		max-height:toRem(67) ;
+		left: -1%;
+		bottom: 30%;
+
+		&__image {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 132/67;
+			object-fit: cover;
+		}
+
+		@media (max-width: toEm(885)) {
+			bottom: 90%;
+		}
+	}
+
+	.branch-right {
+		position: absolute;
+		display: flex;
+		flex-shrink: 0;
+
+		flex-grow: 1;
+		flex-basis:toRem(195) ;
+		max-height:toRem(262) ;
+		right: -4%;
+		bottom: 30%;
+		@include adaptiveValue("flex-basis", 195, 60);
+		@include adaptiveValue("max-height", 262, 90);
+
+		@media (max-width: toEm(885)) {
+			bottom: 70%;
+		}
+
+		@media (max-width: toEm(642) ) {
+			bottom: 90%;
+		}
+
+		&__image {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 195/262;
+			object-fit: contain;
+			transform: rotate(-5deg);
+		}
+	}
+
+
+
+	&__container {
+
+		padding-top: toRem(141);
+		padding-right:toRem(93) ;
+		padding-bottom:toRem(20);
+		padding-left: toRem(31);
+		display: flex;
+		flex-wrap: wrap;
+		column-gap:toRem(98);
+		vertical-align: middle;
+		justify-content: space-between;
+		@include adaptiveValue("padding-top", 141, 50);
+		@include adaptiveValue("padding-right", 93, 15);
+		@include adaptiveValue("padding-left", 31, 15);
+
+		@media (max-width: toEm(1350)) {
+			justify-content: center;
+			row-gap: toRem(10);
+		}
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		flex-basis:toRem(682);
+		row-gap:toRem(52) ;
+		flex-grow: 0;
+		flex-shrink: 1;
+		padding-top:toRem(74) ;
+		padding-bottom: toRem(124) ;
+		align-items: flex-start;
+		@include adaptiveValue("padding-bottom", 124, 30);
+		@include adaptiveValue("padding-top", 74, 10);
+
+		@media (max-width: toEm(1350)) {
+			justify-content: center;
+			align-items: center;
+
+		}
+
+	}
+
+
+	&__title {
+
+		font-size: toRem(74);
+		font-style: normal;
+		font-weight: 300;
+		line-height: 0.74;
+		text-transform: capitalize;
+		@include adaptiveValue("font-size", 74, 30);
+	}
+
+	&__subscribe {
+		display: flex;
+		font-size: toRem(30);
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.83;
+		text-transform: capitalize;
+		@include adaptiveValue("font-size", 30, 18);
+		justify-content: center;
+
+		@media (max-width: toEm(1350)) {
+			text-align: center;
+		}
+
+	}
+
+
+	&__picture {
+		position: relative;
+		display: flex;
+		flex-basis:toRem(424);
+		flex-grow: 0;
+		flex-shrink: 1;
+		max-height: toRem(542) ;
+		border-radius: toRem(160) 0 toRem(160) 0;
+		z-index: 10;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 3%;
+			right: -4%;
+			z-index: 1;
+			border-radius: toRem(160) 0 toRem(160) 0;
+			border: toRem(2) solid rgba(0, 0, 0, 0.25);
+	
+		}
+
+		img {
+			border-radius: toRem(160) 0 toRem(160) 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			aspect-ratio: 424/542;
+			z-index: 10;
+		}
+	}
+}
+
+.shop-button {
+	display: flex;
+	padding: toRem(19) toRem(26);
+	justify-content: center;
+	align-items: center;
+	gap: toRem(8);
+	background: #1E2832;
+	transition: background 0.4s;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: #1e283285;
+		}
+	}
+
+
+	&__image {
+		width: toRem(24);
+		height: toRem(24);
+	}
+
+	// .shop-button__text
+
+	&__text {
+		color: #FFF;
+		font-size: toRem(29);
+		font-weight: 400;
+		text-transform: capitalize;
+	}
+}
+
+// // **********************
+// *********Brands*******
+
+.brands {
+	background-color: #FFF;
+
+	// .brands__container
+
+	&__container {
+		padding-top: toRem(90);
+		padding-bottom: toRem(90);
+		@include adaptiveValue("padding-bottom", 90, 20);
+		@include adaptiveValue("padding-top", 90, 20);
+	}
+
+	// .brands__list
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		row-gap: toRem(20);
+
+		@media (max-width: toEm(1030)) {
+			justify-content: space-around;
+		}
+
+
+	}
+
+	// .brands__item
+
+	&__item {
+		display: flex;
+		align-self: center;
+		flex-basis: toRem(200);
+		flex-shrink: 1;
+		flex-grow: 0;
+		max-height: toRem(70);
+		@include adaptiveValue("flex-basis", 200, 120);
+		@include adaptiveValue("max-height", 70, 40);
+	}
+
+	// .brands__image
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		aspect-ratio: 200/70;
+	}
+}
+
+//**************************
+
+
