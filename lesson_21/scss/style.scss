@@ -1,0 +1,114 @@
+@use "sass:math";
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_mixins.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,600&display=swap");
+
+
+$mainColor: #000;
+$main-bg: #fff;
+
+// Мінімальна ширина сторінки@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1320;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1320;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: $mainColor;
+	background-color: $main-bg;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: toRem(1350);
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+	margin: 0 auto;
+
+}
+
+.header,
+.footer {
+	background-color: #ffcc02;
+	padding: toRem(20);
+	font-weight: 600;
+	font-size: toRem(40);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.header--margin {
+	margin-bottom: toRem(20);
+}
+
+.wrapper {}
+
+.page {}
+
+
+.tasks {
+
+	// .tasks__container
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		row-gap: toRem(50);
+	}
+		&__container--margin {
+			margin-bottom: toRem(30) ;
+		}
+}
+
+.part {
+	display: flex;
+	flex-direction: column;
+	row-gap: toRem(20);
+
+	// .part__task
+
+	&__task {
+		font-weight: 600;
+		font-size: toRem(23);
+	}
+
+	// .part__question
+
+	&__question {
+		display: flex;
+		flex-direction: column;
+		row-gap: toRem(5);
+	}
+
+	// .part__variant
+
+	&__variant {}
+
+	// .part__answer
+
+	&__answer {
+		font-size: toRem(20);
+		padding: toRem(10);
+		background-color: green;
+		border-radius: toRem(8);
+	}
+}
+
+.footer {}
