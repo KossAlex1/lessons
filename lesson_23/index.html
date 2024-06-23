@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>lesson 23</title>
+	</head>
+
+	<body>
+		<div class="header header--margin">
+			<h1>Javascript<br> Part 3</h1>
+		</div>
+
+		<div class="wrapper">
+			<main class="page">
+				<div class="tasks">
+					<div class="tasks__container tasks__container--margin">
+						<section class="part">
+							<h2 class="part__task">Задача №1</h2>
+							<h3>Отримати в константу елемент "body" </h3>
+							<div class="part__question">
+
+							</div>
+							<p class="part__answer">Відповідь: <br> const bodyElement = document.body
+								<br>
+								console.log(bodyElement)</p>
+
+						</section>
+
+						<section class="part">
+							<h2 class="part__task">Задача №2</h2>
+							<h3>
+								Написати функцію, яка додає в "body" список UL
+								з певною кількістю LI (кількість має передаватись як параметр
+								функції,також мати значення за замовченням)</h3>
+
+							<p class="part__answer">Відповідь в консолі</p>
+
+						</section>
+
+						<section class="part">
+							<h2 class="part__task">Задача №3</h2>
+							<h3>Додати до елементу "body" класс loaded.
+								Потім перевірити чи є клас loaded у елемента <body>
+									і, якщо є, додати стиль кольору тексту зелений.</h3>
+								<div class="part__question">
+
+								</div>
+								<p class="part__answer">Відповідь: <br>
+									bodyElement.classList.add("loaded") <br>
+									if (bodyElement.classList.contains("loaded")) { <br>
+									bodyElement.style.color = `green` <br>
+									}
+								</p>
+
+							</section>
+
+							<section class="part">
+								<h2 class="part__task">Задача №4</h2>
+								<h3>Дано в html: три елементи з класом item. Треба отримати ці елементи
+									в константу, кожному додати клас active, та перезаписати контент
+									всередені кожного елемента на
+									"Елемент №(тут порядковий номер елементу починаючи з 1)".</h3>
+								<div class="part__question">
+									<p class="part__variant">
+									</p>
+
+								</div>
+								<div class="part__answer">
+									<div class="part__items">
+										<div class="part__item">1</div>
+										<div class="part__item">2</div>
+										<div class="part__item">3</div>
+									</div>
+								</div>
+
+							</section>
+
+							<section class="part">
+								<h2 class="part__task">Задача №5</h2>
+								<h3>Дано в html: текст, далі кнопка з класом button. Треба прокрутити
+									скрол сторінки до кнопки</h3>
+								<div class="part__question">
+									<p class="part__variant">
+
+									</p>
+
+								</div>
+								<div class="part__answer">
+									<p class="part__text">Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Rerum ex
+										maiores necessitatibus in repellendus, reiciendis rem provident
+										aspernatur ipsam molestias veniam sunt. Exercitationem consectetur
+										nobis corporis adipisci beatae laboriosam rerum!</p>
+									<button data-scroll="start" class="part__button" type="button">
+										Скрол до кнопки
+									</button>
+								</div>
+
+							</section>
+
+							<section class="part">
+								<h2 class="part__task">Задача №6</h2>
+								<h3>Дано в html: посилання з класом link Треба додати до посилання дата атрибут зі значенням 100 .Потім отримати значення атрибуту, та, якщо значення меньше 200 пофарбувати колір тексту посилання в червоний</h3>
+								<div class="part__question">
+									<p class="part__variant">
+
+									</p>
+
+								</div>
+								<div class="part__answer">
+									<a class="part__link" data-speed="100" href="#">я посилання</a>
+								</div>
+
+							</section>
+
+						</div>
+					</div>
+
+				</main>
+				<footer class="footer">job is done</footer>
+
+			</div>
+			<script src="js/script.js"></script>
+		</body>
+	</html>
