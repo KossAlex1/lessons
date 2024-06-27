@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>lesson 23</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header header--margin">
+				<h1>Javascript<br> Part 4</h1>
+			</header>
+
+			<main class="page">
+				<div class="tasks">
+					<div class="tasks__container tasks__container--margin">
+						<section class="part">
+							<h2 class="part__task">Задача №1</h2>
+							<h3>Дано в html: три елементи з класом item.
+								При кліку на кожен з елементів додати клас active,
+								при повторному кліку прибрати клас </h3>
+							<div class="part__question">
+
+							</div>
+							<div class="part__answer first">Відповідь:
+								<div class="first__items">
+									<button class="first__item" type="button">Елемент</button>
+									<button class="first__item" type="button">Елемент</button>
+									<button class="first__item" type="button">Елемент</button>
+								</div>
+								<div>
+
+						</section>
+
+						<section class="part">
+							<h2 class="part__task">Задача №2</h2>
+							<h3>
+								Дано в css/scss: body прозорий
+								При повному завантаженню сторінки додати клас до body який прибирає
+								прозорість.</h3>
+
+							<p class="part__answer">Відповідь:<br>scss-
+								body { <br>
+								opacity: 0;<br>
+								transition: opacity 4s;<br>
+								}<br>
+								.loaded{<br>
+								opacity: 1;<br>
+								}<br>
+								JS- <br>
+								window.addEventListener("load", bodyLoaded);<br>
+								function bodyLoaded() {<br>
+								document.body.classList.add('loaded')<br>
+								}
+
+							</p>
+
+						</section>
+
+						<section class="part">
+							<h2 class="part__task">Задача №3</h2>
+							<h3>Дано в html: header main footer
+								Пи наведенні курсору на header змінювати колір фону у footer.
+								Коли курсор йде з header повертати початковий фон для footer.
+								.</h3>
+							<div class="part__question">
+
+							</div>
+							<p class="part__answer">Відповідь: в script.js
+							</p>
+
+						</section>
+
+						<section class="part">
+							<h2 class="part__task">Задача №4</h2>
+							<h3>Дано в html: текст, елемент з класом item, текст. Так, що елемент з
+								класом item за межами в'юпотрта.
+								Створити функцію яка будує інтервал який буде змінювати контент в
+								елементі item виводячи цифру яка збільшується на одиницю: 1 2 3 ... і
+								т.д.
+								Затримка між зміною числа, та до якого числа має працювати інтервал
+								має
+								задаватись в дата атрибутах елемента item.
+								Функція має запустатить коли ми доскролюємо до елементу item (його
+								видно), і не запускатись повторно.</h3>
+							<div class="part__question">
+								<p class="part__variant">
+								</p>
+
+							</div>
+							<div class="part__answer four">
+								<p class="four__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti quo doloribus architecto facilis velit ut eaque quis magni, blanditiis reiciendis consequuntur iure id, tenetur delectus magnam, rerum voluptate sed!</p>
+								<div  class="four__items">
+									<div  class="four__item">
+										<div class="four__number" data-speed="1000" >0</div>
+									</div>
+								</div>
+
+									<p class="four__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti quo doloribus architecto facilis velit ut eaque quis magni, blanditiis reiciendis consequuntur iure id, tenetur delectus magnam, rerum voluptate sed!</p>
+
+
+							</div>
+
+						</section>
+					</div>
+				</div>
+
+			</main>
+
+			<footer class="footer">job is done</footer>
+
+		</div>
+			<script src="js/script.js"></script>
+	</body>
+</html>
