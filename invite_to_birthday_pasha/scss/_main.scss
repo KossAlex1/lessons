@@ -1,0 +1,124 @@
+//========================================================================================================================================================
+
+.image {
+
+	// .image__container
+
+	&__container {
+		display: flex;
+		flex-shrink: 1;
+
+		max-width: toRem(500);
+
+
+	}
+
+	// .image__main
+
+	&__main {
+		aspect-ratio: 1/1;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+
+
+.faq {
+
+
+	@include adaptiveValue("padding-bottom", 70, 40);
+
+	// .faq__title
+	&__title {
+		text-align: center;
+
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 40, 25);
+		}
+	}
+
+	// .faq__container
+	&__container {}
+
+	// .faq__items
+	&__items {
+		max-width: toRem(1070);
+		margin: 0 auto;
+	}
+
+	// .faq__item
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: toRem(15);
+		}
+	}
+
+	&__title {
+		@include adaptiveValue("font-size", 49, 25);
+		color: #d58c1f;
+		font-size: toRem(49);
+		font-weight: 600;
+	}
+
+}
+
+
+
+.item-faq {
+	border-radius: toRem(8);
+	border: toRem(2) solid var(--Theme-Yellow, #100371);
+	background: #fff;
+	box-shadow: toRem(-3) toRem(4) toRem(15) 0 rgba(0, 0, 0, 0.06);
+	padding: toRem(15);
+
+	// .item-faq__title
+	&__title {
+		cursor: pointer;
+		background: url("../img/icons/q.svg") 0 0 / toRem(33) no-repeat;
+		list-style: none;
+		font-size: toRem(19);
+		font-weight: 600;
+		gap: toRem(5);
+		line-height: 126.315789%;
+		/* 24/19 */
+		min-height: toRem(33.333);
+		padding-block-start: toRem(7);
+		padding-inline-start: toRem(51);
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		align-items: flex-start;
+
+		&::marker,
+		&::-webkit-details-marker {
+			display: none;
+		}
+
+		&::before {
+			line-height: 1;
+			font-size: toRem(14);
+			transition: all 0.3s;
+			margin-block-start: toRem(5);
+		}
+
+		&._open {
+			&::before {
+				transform: rotate(-180deg);
+			}
+		}
+
+		@media (max-width: toEm(479.98)) {
+			background: url("../img/icons/q.svg") 0 0 / toRem(25) no-repeat;
+			padding-block-start: toRem(3);
+			padding-inline-start: toRem(35);
+		}
+	}
+
+	// .item-faq__text
+	&__text {
+		padding-top: toRem(15);
+		line-height: 1.87;
+		/* 30/16 */
+	}
+}

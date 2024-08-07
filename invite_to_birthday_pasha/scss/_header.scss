@@ -1,0 +1,26 @@
+.header {
+	position: sticky;
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	z-index: 50;
+	padding-block: toRem(30);
+	background: $colorGreen;
+
+
+	// .header__container
+
+	&__container {
+
+		text-align: center;
+	}
+
+	// .header__title
+
+	&__title {
+		font-size: toRem(60);
+		text-shadow: 5px 5px 3px #000;
+		font-weight: 600;
+		color: #fff;
+		@include adaptiveValue("font-size", 60, 30);
+	}
+}
